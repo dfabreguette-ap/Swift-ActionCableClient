@@ -109,7 +109,7 @@ internal class JSONSerializer {
                   messageError = error
                 }
                 
-                return Message(channelIdentifier: channelIdentifier!,
+                return Message(channelIdentifier: channelIdentifier ?? "Unknown Identifier",
                                actionName: messageActionName,
                                messageType: MessageType.message,
                                data: messageValue,
